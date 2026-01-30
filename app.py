@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import time
 import datetime
 import plotly.express as px
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 
 # Configuración de página
 st.set_page_config(page_title="Real Estate Scraper - Canarias", page_icon="🏠", layout="wide")
