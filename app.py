@@ -102,20 +102,11 @@ def scrape_ads(isla, tipo_inmueble, max_precio):
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/609/609803.png", width=100)
     st.title("Hathor Real Estate")
-    selected = option_menu(
-        menu_title=None,
-        options=["Dashboard", "Buscador", "Historial", "Configuración"],
-        icons=["speedometer2", "search", "clock-history", "gear"],
-        menu_icon="cast",
-        default_index=0,
-        styles={
-            "container": {"padding": "0!important", "background-color": "transparent"},
-            "icon": {"color": "#2575fc", "font-size": "20px"},
-            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-            "nav-link-selected": {"background-color": "#2575fc"},
-        }
+    selected = st.radio(
+        "Menú",
+        ["Dashboard", "Buscador", "Historial", "Configuración"],
+        horizontal=True
     )
-
 if selected == "Dashboard":
     st.markdown("# 📊 Panel de Control")
     col1, col2, col3, col4 = st.columns(4)
