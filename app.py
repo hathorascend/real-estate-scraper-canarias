@@ -1,3 +1,4 @@
+# Fixed Streamlit Cloud deployment - Dependencies updated
 import streamlit as st
 import pandas as pd
 import gspread
